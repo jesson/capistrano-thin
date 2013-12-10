@@ -1,7 +1,7 @@
 pid: <%= thin_pid %>
 address: 127.0.0.1
-timeout: 30
-wait: 30
+timeout: <%= thin_timeout %>
+wait: <%= thin_wait %>
 port: <%= thin_port %>
 log: <%= thin_log %>
 max_conns: <%= thin_max_conns %>
