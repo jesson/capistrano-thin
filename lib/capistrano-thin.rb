@@ -10,6 +10,8 @@ Capistrano::Configuration.instance.load do
   _cset(:thin_config) { "-C #{thin_config_file}" }
 
   _cset(:thin_port) { 3000 }
+  _cset(:thin_timeout) { 30 }
+  _cset(:thin_wait) { 30 }
   _cset(:thin_pid) { 'tmp/pids/thin.pid' }
   _cset(:thin_log) { 'log/thin.log' }
   _cset(:thin_max_conns) { 1024 }
