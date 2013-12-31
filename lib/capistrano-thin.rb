@@ -1,4 +1,5 @@
 require 'erb'
+require 'capistrano'
 
 Capistrano::Configuration.instance.load do
   def _cset(variable, *args, &block)
